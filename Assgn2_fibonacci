@@ -1,0 +1,16 @@
+terms = int(input("Enter the number of required terms: "))
+a, b = 0, 1
+c = 0
+if terms <= 0:
+   print("Enter a positive number!")
+elif terms == 1:
+   print("Fibonacci sequence till",str(terms),":")
+   print(a)
+else:
+   print("Required sequence:")
+   while c < terms:
+       print(a)
+       next = a + b
+       a = b
+       b = next
+       c =c+1
