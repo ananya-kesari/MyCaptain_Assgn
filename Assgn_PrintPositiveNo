@@ -1,0 +1,10 @@
+a=input("Enter the range in the format: [n1,n2,n3...] :")
+a=a[:-1]
+a=a[1:]
+a=a.split(",")
+b=[]
+for i in a:
+    if int(i)>0:
+        b.append(int(i))
+print("The output is: "+ str(b))
+
